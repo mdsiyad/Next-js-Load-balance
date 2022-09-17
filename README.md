@@ -1,2 +1,3 @@
 # Next-js-Load-balance
-Dockerized Next js app with load balancing
+Using Nginx as Load Balancer with Dockerized Next js app and PM2.
+
