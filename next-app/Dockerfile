@@ -13,10 +13,9 @@ COPY . /usr/src
 # install dependencies
 RUN npm install
 RUN npm install pm2 -g
-COPY . . 
-
+COPY . /usr/src
 
 # start app
 RUN npm run build
 EXPOSE 3000
-CMD ["pm2-runtime", "start", "npm -- start"]
+CMD [ "pm2-runtime", "start", "npm", "--", "start" ]
