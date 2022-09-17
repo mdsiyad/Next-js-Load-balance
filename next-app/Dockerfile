@@ -13,7 +13,7 @@ COPY . /usr/src
 # install dependencies
 RUN npm install
 RUN npm install pm2 -g
-COPY . /usr/src
+COPY . .
 
 # start app
 RUN npm run build
